@@ -1,0 +1,127 @@
+{
+  "patients": [
+    {
+      "id": "bff4ad0a-6a68-44a7-b73c-117a1052eba0",
+      "name": "Henrietta Lacks",
+      "gender": "Female",
+      "birthday": "1920-12-24T00:00:00.000Z"
+    },
+    {
+      "id": "4faf133c-9bba-4b6c-a649-44398e2df866",
+      "name": "Helmut Kohl",
+      "gender": "Male",
+      "birthday": "1933-02-22T00:00:00.000Z"
+    },
+    {
+      "id": "37b472db-8612-4b9f-a25d-07c08c838154",
+      "name": "Jacques Chirac",
+      "gender": "Male",
+      "birthday": "1945-08-30T00:00:00.000Z"
+    },
+    {
+      "id": "a3467220-f4e9-4f78-87d0-7030c1334641",
+      "name": "Theodor Billroth",
+      "gender": "Male",
+      "birthday": "1867-08-24T10:00:00.000Z"
+    },
+    {
+      "id": "15b9d0ef-f868-4806-9bfc-3cd6c3234779",
+      "name": "Marie Curie",
+      "gender": "Female"
+    }
+  ],
+  "studies": [
+    {
+      "id": "3675952b-617f-40fb-8715-4580e1fc086d",
+      "patientId": "bff4ad0a-6a68-44a7-b73c-117a1052eba0",
+      "description": "Hysterectomy",
+      "status": "Finished",
+      "startTime": "2020-02-10T09:00:00.000Z",
+      "endTime": "2020-02-10T10:00:00.000Z"
+    },
+    {
+      "id": "cb3ebe72-402f-424f-a90b-eedff594ab93",
+      "patientId": "4faf133c-9bba-4b6c-a649-44398e2df866",
+      "description": "Brain Surgery",
+      "status": "Finished",
+      "startTime": "2020-02-10T11:00:00.000Z",
+      "endTime": "2020-02-10T13:00:00.000Z"
+    },
+    {
+      "id": "b04ee340-7cba-4594-b57d-478299659a67",
+      "patientId": "37b472db-8612-4b9f-a25d-07c08c838154",
+      "description": "Triage",
+      "status": "In Progress",
+      "startTime": "2020-02-11T11:00:00.000Z",
+      "endTime": "2020-02-11T11:30:00.000Z"
+    },
+    {
+      "id": "7ca46b88-2b5b-44b7-ae96-a11ae73cce19",
+      "patientId": "4faf133c-9bba-4b6c-a649-44398e2df866",
+      "description": "Mastectomy",
+      "status": "In Progress",
+      "startTime": "2020-02-11T12:00:00.000Z",
+      "endTime": "2020-02-11T14:00:00.000Z"
+    },
+    {
+      "id": "0ad8e977-186e-4c27-9db0-0480a313d901",
+      "patientId": "a3467220-f4e9-4f78-87d0-7030c1334641",
+      "description": "Rhinoplasty",
+      "status": "Planned",
+      "startTime": "2020-02-12T10:00:00.000Z",
+      "endTime": "2020-02-12T13:00:00.000Z"
+    },
+    {
+      "id": "1ad1974a-a54f-4bc5-8006-315464139499",
+      "patientId": "a3467220-f4e9-4f78-87d0-7030c1334641",
+      "status": "Planned",
+      "description": "Roux Y",
+      "startTime": "2020-02-13T07:30:00.000Z",
+      "endTime": "2020-02-13T09:30:00.000Z"
+    },
+    {
+      "id": "536af48e-6e94-49a8-82c0-c5cc868dd123",
+      "patientId": "bff4ad0a-6a68-44a7-b73c-117a1052eba0",
+      "status": "Planned",
+      "description": "Visit",
+      "startTime": "2020-02-11T18:30:00.000Z",
+      "endTime": "2020-02-11T19:34:00.000Z"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "52b7af89-956b-4383-9b55-9c973a620196",
+      "name": "OR 1"
+    },
+    {
+      "id": "ad34f77a-fea7-4c50-8eb3-35eba733fa2f",
+      "name": "OR 2"
+    },
+    {
+      "id": "4134e071-0164-4210-8913-e2f36192c828",
+      "name": "OR 3"
+    },
+    {
+      "id": "9ae1ce27-fd2d-485d-812b-2640402ef4da",
+      "name": "OR 4"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "c2b80c7e-67cf-49d6-9a53-f73926f0a56f",
+      "name": "Drake Moriaty"
+    },
+    {
+      "id": "67936c86-d34e-4776-b477-92c6684719f5",
+      "name": "Gregory House"
+    },
+    {
+      "id": "52f07fb2-1ee4-4486-97e3-ef9c4a3e1641",
+      "name": "Oliver Sacks"
+    },
+    {
+      "id": "42155597-70c7-4eca-b0cc-5f3add9f3af3",
+      "name": "Meredith Gray"
+    }
+  ]
+}
