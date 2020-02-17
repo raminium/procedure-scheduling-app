@@ -4,6 +4,9 @@
 
 export interface IAction {
   type: string,
+  payload?: IStudy | IRoom | IPatient |
+  IDoctor | IDoctorsState | IStudiesState |
+  IStudy[] | IDoctor[] | Error | string | any,
 }
 
 export interface IActionPayload {

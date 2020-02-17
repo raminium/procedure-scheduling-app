@@ -84,7 +84,7 @@ describe('fetchPatients', () => {
         expect(store.getActions()).toEqual(expectedActions);
       });
   });
-  it('creates FETCH_PATIENTS_REQUEST and afterwards FETCH_PATIENTS_FAILURE with the correct payload  when fetching failed', () => {
+  it('creates FETCH_PATIENTS_REQUEST and afterwards FETCH_PATIENTS_FAILURE with the correct payload when fetching failed', () => {
     fetchMock.getOnce(sampleDataLocation, {
       throws: mockError,
     });
@@ -118,7 +118,7 @@ describe('fetchDoctors', () => {
         expect(store.getActions()).toEqual(expectedActions);
       });
   });
-  it('creates FETCH_DOCTORS_REQUEST and afterwards FETCH_DOCTORS_FAILURE  with the correct payload when fetching failed', () => {
+  it('creates FETCH_DOCTORS_REQUEST and afterwards FETCH_DOCTORS_FAILURE with the correct payload when fetching failed', () => {
     fetchMock.getOnce(sampleDataLocation, {
       throws: mockError,
     });
@@ -138,7 +138,7 @@ describe('fetchRooms', () => {
     fetchMock.restore();
     store.clearActions();
   });
-  it('creates FETCH_ROOMS_REQUEST and afterwards FETCH_ROOMS_SUCCESS  with the correct payload when fetching is successful', () => {
+  it('creates FETCH_ROOMS_REQUEST and afterwards FETCH_ROOMS_SUCCESS with the correct payload when fetching is successful', () => {
     fetchMock.getOnce(sampleDataLocation, {
       body: mockState,
       headers: mockResponseHeaders,
@@ -152,7 +152,7 @@ describe('fetchRooms', () => {
         expect(store.getActions()).toEqual(expectedActions);
       });
   });
-  it('creates FETCH_ROOMS_REQUEST and afterwards FETCH_ROOMS_FAILURE  with the correct payload when fetching failed', () => {
+  it('creates FETCH_ROOMS_REQUEST and afterwards FETCH_ROOMS_FAILURE with the correct payload when fetching failed', () => {
     fetchMock.getOnce(sampleDataLocation, {
       throws: mockError,
     });
