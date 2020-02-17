@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const AppContainer = styled.div`
+const AppContainer = styled.div`
 display: flex;
 flex-wrap: wrap;
 margin-left: 240px;
