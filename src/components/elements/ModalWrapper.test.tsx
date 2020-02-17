@@ -17,17 +17,17 @@ describe('ModalWrapper', () => {
     ));
   });
   it('renders modalWrapper without errors', () => {
-    const modalWrapper = getByTestId('modal-wrapper');
+    const modalWrapper: HTMLElement = getByTestId('modal-wrapper');
     expect(modalWrapper).toBeInTheDocument();
   });
   it('does not render modal', () => {
     expect(() => { getByTestId('modal'); }).toThrowError();
   });
   it('renders modal upon click on modal button wrapper', () => {
-    const modalButtonWrapper = getByTestId('modal-button-wrapper');
+    const modalButtonWrapper: HTMLElement = getByTestId('modal-button-wrapper');
     fireEvent.click(modalButtonWrapper);
 
-    const modal = getByTestId('modal');
+    const modal: HTMLElement = getByTestId('modal');
     expect(modal).toBeInTheDocument();
     expect(modal).toBeVisible();
   });
