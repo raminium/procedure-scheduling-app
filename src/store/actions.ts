@@ -5,7 +5,7 @@ import sampleDataLocation from '../config';
 
 export const fetchDoctors = () => (
   dispatch: Dispatch<interfaces.IAction>,
-): Promise< void | interfaces.IActionPayload> => {
+): Promise< void | interfaces.IAction> => {
   dispatch(actions.fetchDoctorsRequest());
 
   return fetch(sampleDataLocation)
@@ -17,8 +17,8 @@ export const fetchDoctors = () => (
 };
 
 export const fetchPatients = () => (
-  dispatch: Dispatch<interfaces.IAction | interfaces.IActionPayload>,
-): Promise< void | interfaces.IActionPayload> => {
+  dispatch: Dispatch<interfaces.IAction>,
+): Promise< void | interfaces.IAction> => {
   dispatch(actions.fetchPatientsRequest());
 
   return fetch(sampleDataLocation)
@@ -31,7 +31,7 @@ export const fetchPatients = () => (
 
 export const fetchRooms = () => (
   dispatch: Dispatch<interfaces.IAction>,
-): Promise< void | interfaces.IActionPayload> => {
+): Promise< void | interfaces.IAction> => {
   dispatch(actions.fetchRoomsRequest());
 
   return fetch(sampleDataLocation)
@@ -44,7 +44,7 @@ export const fetchRooms = () => (
 
 export const fetchStudies = () => (
   dispatch: Dispatch<interfaces.IAction>,
-): Promise< void | interfaces.IActionPayload> => {
+): Promise< void | interfaces.IAction> => {
   dispatch(actions.fetchStudiesRequest());
 
   return fetch(sampleDataLocation)
@@ -57,7 +57,7 @@ export const fetchStudies = () => (
 
 export const addPatient = (patient: interfaces.IPatient) => (
   dispatch: Dispatch<interfaces.IAction>,
-): interfaces.IActionPayload => {
+): interfaces.IAction => {
   dispatch(actions.addPatientRequest());
   /**
    * @TODO: This should be a POST request

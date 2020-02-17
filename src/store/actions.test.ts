@@ -7,10 +7,10 @@ import * as actions from './actions';
 import sampleDataLocation from '../config';
 import { StatusTypes, IState } from '../utilities/interfaces';
 
-type DispatchExts = ThunkDispatch<IState, void, AnyAction>
+type ITestDispatch = ThunkDispatch<IState, void, AnyAction>
 
 const middleware = [thunk];
-const mockStore = configureMockStore<IState, DispatchExts>(middleware);
+const mockStore = configureMockStore<IState, ITestDispatch>(middleware);
 
 const mockStudy = {
   id: '123',
