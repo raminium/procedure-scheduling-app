@@ -9,14 +9,7 @@ export interface IAction {
   IStudy[] | IDoctor[] | Error | string | any,
 }
 
-export interface IActionPayload {
-  type: string,
-  payload: IStudy | IRoom | IPatient |
-  IDoctor | IDoctorsState | IStudiesState |
-  IStudy[] | IDoctor[] | Error | string | any,
-}
-
-// manipulated verison of the AppointmentModel
+// Manipulated verison of the AppointmentModel
 // type from the @devexpress/dx-react-scheduler npm package.
 // It is adjusted for the fact that procedures can be scheduled without an end date.
 export interface IAppointmentModel {
@@ -120,4 +113,4 @@ export type GenderTypes = 'Male' | 'Female' | 'Other'
 export type StatusTypes = 'Planned' | 'In Progress' | 'Finished'
 
 // see IAppointmentModel for comment.
-export type SchedulerDateTime = Date | number | string;
+export type SchedulerDateTime = Date | number | string
