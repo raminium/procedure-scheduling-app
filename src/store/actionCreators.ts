@@ -110,7 +110,7 @@ export const addStudySuccess = (data: interfaces.IStudy): interfaces.IActionPayl
   payload: data,
 });
 
-export const addStudyFailure = (error: Error): interfaces.IActionPayload => ({
+export const addStudyFailure = (error: Error): interfaces.IAction => ({
   type: types.ADD_STUDY_FAILURE,
   payload: error,
 });
@@ -119,12 +119,12 @@ export const updateProcedureRequest = (): interfaces.IAction => ({
   type: types.UPDATE_PROCEDURE_REQUEST,
 });
 
-export const updateProcedureSuccess = (data: interfaces.IStudy): interfaces.IActionPayload => ({
+export const updateProcedureSuccess = (data: interfaces.IStudy): interfaces.IAction => ({
   type: types.UPDATE_PROCEDURE_SUCCESS,
   payload: data,
 });
 
-export const updateProcedureFailure = (error: Error): interfaces.IActionPayload => ({
+export const updateProcedureFailure = (error: Error): interfaces.IAction => ({
   type: types.UPDATE_PROCEDURE_FAILURE,
   payload: error,
 });
