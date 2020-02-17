@@ -1,5 +1,5 @@
 import * as types from '../actionTypes';
-import { IActionPayload, IPatientsState } from '../../utilities/interfaces';
+import { IAction, IPatientsState } from '../../utilities/interfaces';
 
 export const initialState: IPatientsState = {
   loading: true,
@@ -8,7 +8,7 @@ export const initialState: IPatientsState = {
 };
 
 export default function patientReducer(
-  state = initialState, action: IActionPayload,
+  state = initialState, action: IAction,
 ): IPatientsState {
   switch (action.type) {
     case types.FETCH_PATIENTS_REQUEST:

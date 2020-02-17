@@ -1,6 +1,6 @@
 import * as types from '../actionTypes';
 import {
-  IActionPayload, IStudiesState, IStudy,
+  IAction, IStudiesState, IStudy,
 } from '../../utilities/interfaces';
 
 export const initialState = {
@@ -9,7 +9,7 @@ export const initialState = {
   data: [],
 };
 
-export default function roomsReducer(state = initialState, action: IActionPayload): IStudiesState {
+export default function roomsReducer(state = initialState, action: IAction): IStudiesState {
   switch (action.type) {
     case types.FETCH_STUDIES_REQUEST:
       return {

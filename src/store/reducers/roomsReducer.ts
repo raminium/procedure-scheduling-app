@@ -1,5 +1,5 @@
 import * as types from '../actionTypes';
-import { IActionPayload, IRoomsState } from '../../utilities/interfaces';
+import { IAction, IRoomsState } from '../../utilities/interfaces';
 
 export const initialState: IRoomsState = {
   loading: true,
@@ -7,7 +7,7 @@ export const initialState: IRoomsState = {
   data: [],
 };
 
-export default function roomsReducer(state = initialState, action: IActionPayload): IRoomsState {
+export default function roomsReducer(state = initialState, action: IAction): IRoomsState {
   switch (action.type) {
     case types.FETCH_ROOMS_REQUEST:
       return {

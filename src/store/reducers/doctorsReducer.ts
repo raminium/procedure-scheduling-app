@@ -1,5 +1,5 @@
 import * as types from '../actionTypes';
-import { IDoctorsState, IActionPayload } from '../../utilities/interfaces';
+import { IDoctorsState, IAction } from '../../utilities/interfaces';
 
 export const initialState: IDoctorsState = {
   loading: true,
@@ -8,7 +8,7 @@ export const initialState: IDoctorsState = {
 };
 
 export default function doctorsReducer(
-  state = initialState, action: IActionPayload,
+  state = initialState, action: IAction,
 ): IDoctorsState {
   switch (action.type) {
     case types.FETCH_DOCTORS_REQUEST:
